@@ -21,7 +21,7 @@ export default {
         console.log("server user", res.locals.user);
         const { allClaims: claims, ...authUser } = res.locals.user;
 
-        await dispatch("onAuthStateChangedAction", { authUser, claims });
+        await dispatch("onAuthStateChanged", { authUser, claims });
       }
     },
     onAuthStateChanged({ commit }, { authUser, claims }) {
