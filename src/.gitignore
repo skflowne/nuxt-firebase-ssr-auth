@@ -68,6 +68,9 @@ typings/
 # nuxt.js build output
 .nuxt
 
+# firebase public
+public
+
 # Nuxt generate
 dist
 
